@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log In</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap"
+      rel="stylesheet" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- login page stylesheet -->
+    <link rel="stylesheet" href="./css/login.css" />
+  </head>
+  <body>
+    <section id="login_page" class="">
+      <div class="layer ">
+        <div class="container">
+          <div
+            class="row py-2 vh-100 d-flex justify-content-center align-items-center">
+            <div class="col-md-4">
+              <div class="login_data p-3 rounded">
+                <h1 class="text-center mb-5 text-white">Log In</h1>
+                <label for="user_email" class="mb-2 px-1 text-white">
+                  <i class="fa-solid fa-at me-2"></i> Email :</label
+                >
+                <input
+                  id="user_email_login"
+                  type="email"
+                  name="user email"
+                  class="form-control p-2 mb-4"
+                  placeholder="Enter Your Email" />
+                <label for="user_password" class="mb-2 px-1 text-white">
+                  <i class="fa-solid fa-key me-2"></i> Password :</label
+                >
+                <input
+                  id="user_password_login"
+                  type="password"
+                  name="user password"
+                  class="form-control p-2 mb-4"
+                  placeholder="Enter Your password" />
+
+                <p
+                  id="alert_paragraph_2"
+                  class="alert_container alert d-flex align-items-center justify-content-between bg-black d-none"></p>
+                <button
+                  onclick="logIn()"
+                  id="login_btn"
+                  class="login_btn btn btn-outline-primary d-block w-75 mx-auto mb-4">
+                  Log In
+                </button>
+
+                <p class="text-white">
+                  <span>Don't Have An Account ?</span>
+                  <a
+                    id="signup_anchor"
+                    href="signup.html"
+                    class="signup_anchor ms-3"
+                    >Sign Up</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- bootstrap js  -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- login javascript file  -->
+
+    <script src="./js/signup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+body {
+background: -webkit-linear-gradient(to right, #061161, #780206);  
+background: linear-gradient(to right, #061161, #780206); 
+}
+
+
+.login_data {
+    background-color: #212529d6;
+}
+
+.login_data h1 {
+    padding-top: 16px;
+    font-family: 'Rowdies', sans-serif;
+    font-size: 42px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 20px blue;
+}
+
+
+
+.alert_container {
+
+    font-family: 'Raleway', sans-serif;
+    color: whitesmoke
+}
+
+.signup_anchor {
+    text-decoration: none;
+    color: green;
+    border: 1px solid transparent;
+}
+
+.signup_anchor:hover {
+    border-radius: 4px;
+    padding: 8px 10px;
+    border-color: green;
+    transition: all 0.3s;
+}
+
+.login_btn {
+    padding: 8px;
+}
+
+.login_btn:hover {
+    width: 100% !important;
+    transition: all 0.3s;
+
+}
+
+/*&====================================== media Query ======================================= */
+@media (768px < width < 992px) {
+    .col-md-4 {
+        width: 70%;
+    }
+}

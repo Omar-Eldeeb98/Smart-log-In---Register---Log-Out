@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap"
+      rel="stylesheet" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- signup page stylesheet -->
+    <link rel="stylesheet" href="./css/signup.css" />
+  </head>
+  <body>
+    <section id="signup_page" class="">
+      <div class="layer">
+        <div class="container">
+          <div
+            class="row py-2 vh-100 d-flex justify-content-center align-items-center">
+            <div class="col-md-4">
+              <div class="signup_data p-3 rounded">
+                <h1 class="text-center mb-3 text-white">Sign Up</h1>
+                <label for="user_name" class="mb-2 px-1 text-white">
+                  <i class="fa-solid fa-font me-2"></i> Name :</label
+                >
+                <input
+                  oninput="nameValidation()"
+                  id="user_name"
+                  type="text"
+                  name="user name"
+                  class="form-control p-2 mb-3"
+                  placeholder="ex: omar123" />
+                <p
+                  id="nameAlert"
+                  class="alert alert-danger d-none mb-2 d-flex justify-content-between align-items-center">
+                  <span> Invalid User Name</span>
+                  <i class="fa-solid fa-xmark text-danger"></i>
+                </p>
+
+                <label for="user_email" class="mb-2 px-1 text-white">
+                  <i class="fa-solid fa-at me-2"></i> Email :</label
+                >
+                <input
+                  oninput="emailValidation()"
+                  id="user_email"
+                  type="email"
+                  name="user email"
+                  class="form-control p-2 mb-3"
+                  placeholder="xx12@name.com" />
+
+                <p
+                  id="emailAlert"
+                  class="alert alert-danger d-none mb-2 d-flex justify-content-between align-items-center">
+                  <span>Invalid User Email </span>
+                  <i class="fa-solid fa-xmark text-danger"></i>
+                </p>
+
+                <label for="user_password" class="mb-2 px-1 text-white">
+                  <i class="fa-solid fa-key me-2"></i> Password :</label
+                >
+                <input
+                  oninput="passwordValidation()"
+                  id="user_password"
+                  type="password"
+                  name="user password"
+                  class="form-control p-2 mb-4"
+                  placeholder="Ooo124*_#$%" />
+                <p
+                  id="passwordAlert"
+                  class="alert alert-danger d-none mb-2 d-flex justify-content-between align-items-center">
+                  <span>start with Capitale litter then letters or nums or chars</span>
+                  <i class="fa-solid fa-xmark text-danger"></i>
+                </p>
+
+                <p
+                  id="alert_paragraph"
+                  class="alert d-flex align-items-center justify-content-between bg-black rounded bg-black d-none"></p>
+                <button
+                  onclick="signUp()"
+                  id="signup_btn"
+                  class="signup_btn btn btn-success d-block w-75 mx-auto mb-4">
+                  Sign Up
+                </button>
+                <p class="text-white">
+                  <span>Have An Account ?</span>
+                  <a
+                    id="login_anchor"
+                    href="index.html"
+                    class="signup_anchor ms-3"
+                    >Log In</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- bootstrap js  -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- login javascript file  -->
+    <script src="./js/signup.js"></script>
+  </body>
+</html>
