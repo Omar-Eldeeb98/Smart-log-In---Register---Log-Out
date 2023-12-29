@@ -141,7 +141,7 @@ function logIn() {
       alertParagraph2.classList.remove("d-none");
       alertParagraph2.innerHTML =
         ' <span class="text-success">Loged in </span> ';
-      window.location = "../home.html";
+      window.location = "./home.html";
     } else {
       alertParagraph2.classList.remove("d-none");
       alertParagraph2.innerHTML =
@@ -161,7 +161,7 @@ if (userNameHome) {
 //& logout function =================================================================================================
 function logout() {
   localStorage.removeItem("sessionUserName");
-  window.location = "../index.html";
+  window.location = "./index.html";
 }
 //& logout function ============================================================================================
 
