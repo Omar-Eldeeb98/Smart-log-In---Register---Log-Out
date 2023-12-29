@@ -8,3 +8,4 @@ https://omar-eldeeb98.github.io/smart-login-system/
 <img src = "screenshots/mobile0.png" alt = "mobile screen " width = "200" height = "400">,<img src = "screenshots/laptop.png" alt = "laptop screen " width = "600" height = "350">
 
 # tools : 
+html , css , bootstrap , javascript , local storage
